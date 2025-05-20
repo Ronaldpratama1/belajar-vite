@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Vite</title>
+    <style>
+      @import url(style.css);
+      @import url(sample.sass);
+      body {
+        background-color: #222;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Haii</h1>
+    <h2>SASS Testt</h2>
+    <img src="./img/insta.png" alt="insta" width="100px" height="100px" />
+
+    <script type="module">
+      import { sayHello } from "./say-hello.js";
+      import { sayGoodbye } from "./say-goodbye.ts";
+      import { v4 } from "uuid";
+      import * as person from "./person.json";
+      import text from "./text.txt?raw";
+
+      sayHello("Ronald");
+      sayGoodbye("Dika");
+      console.log(v4());
+      console.log(person);
+      console.log(person.name);
+      console.log(person.age);
+      console.log(person.insta);
+      console.log(text);
+    </script>
+  </body>
+</html>

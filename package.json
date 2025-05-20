@@ -16,5 +16,14 @@
     "url": "https://github.com/Ronaldpratama1/belajar-vite/issues"
   },
   "homepage": "https://github.com/Ronaldpratama1/belajar-vite#readme",
-  "description": ""
+  "description": "",
+  "type": "module",
+  "devDependencies": {
+    "sass": "^1.89.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "uuid": "^11.1.0"
+  }
 }
